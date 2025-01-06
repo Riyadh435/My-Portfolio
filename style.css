@@ -117,6 +117,7 @@ header h2 {
 }
 
 .hero .image img {
+  object-fit: fill;
   max-width: 60%;
   height: auto;
   border-radius: 10px;
@@ -248,39 +249,73 @@ footer a:hover {
 
 @media screen and (max-width: 480px) {
   header {
-    padding: 10px 10px;
+    padding: 5px 5px;
   }
 
   header h2 {
-    font-size: 16px;
+    margin-left: 2px;
+    font-size: 10px;
   }
 
   header nav {
     width: 100%;
-    justify-content: flex-start;
-    flex-wrap: wrap;
   }
 
   header nav a {
-    margin: 5px;
-    font-size: 12px;
+    margin: 3px;
+    font-size: 10px;
   }
 
   .hero {
-    padding: 3rem 1rem;
+    flex-direction: column; 
+    align-items: center;
+    padding: 1rem 1rem;
+  }
+
+  .hero-content {
+    flex-direction: column; 
+  }
+
+  .hero .text {
+    order: 2;
+    margin: 0; 
+    text-align: center; 
   }
 
   .hero .text h2 {
     font-size: 1.5rem;
+    margin-bottom: 1rem;
   }
 
   .hero .text p {
     font-size: 14px;
+    margin: 0 auto 1.5rem; 
+    text-align: center; 
+    max-width: 90%; 
+  }
+
+  .hero .image {
+    order: 1; /* Image comes first */
+    width: 100%; /* Full width for the image section */
+    display: flex;
+    justify-content: center;
+  }
+
+  .hero .image img {
+    max-width: 90%; 
+    height: auto;
+    border-radius: 10px;
+  }
+
+  .social-links {
+    margin: 0; 
   }
 
   .social-links a {
-    font-size: 20px;
+    font-size: 18px;
+    margin: 0 8px;
   }
+
 
   .project-card h3 {
     font-size: 16px;
@@ -291,12 +326,12 @@ footer a:hover {
   }
 
   .projects {
-    padding: 4rem 1rem; /* Adjusting padding for mobile */
+    padding: 4rem 1rem;
   }
 
   .allProjects {
     display: flex;
-    flex-direction: column; /* Stack project cards vertically */
+    flex-direction: column;
     gap: 20px;
   }
 
@@ -310,12 +345,12 @@ footer a:hover {
   }
 
   .project-card .image-section {
-    width: 100%; /* Image section should take full width */
+    width: 100%; 
     margin-bottom: 10px;
   }
 
   .project-card .image-section img {
-    max-width: 100%; /* Make the image responsive */
+    max-width: 100%; 
     height: auto;
   }
 

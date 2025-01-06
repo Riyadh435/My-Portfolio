@@ -6,6 +6,7 @@ body {
   color: white;
   /* background-color:  #4f7476; */
   background: linear-gradient(to bottom, #3a5c5f, #003135, #002028, #00141a);
+  
 }
 
 header {
@@ -69,6 +70,7 @@ header h2 {
   font-weight: 600;
   letter-spacing: 2px;
   text-transform: uppercase;
+  border-radius: 10px;
   animation: textAnimation 3s ease-in-out infinite;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 }
@@ -80,6 +82,7 @@ header h2 {
   }
   50% {
     transform: translateY(0);
+    color: #0fa4af;
     opacity: 1;
   }
   100% {
@@ -89,12 +92,12 @@ header h2 {
 }
 
 .hero .text p {
-  margin-left: 60px;
+  margin-left: 70px;
   color: #eaeaea;
   margin-bottom: 2rem;
 }
 .social-links {
-  margin-left: 60px;
+  margin-left: 70px;
 }
 .social-links a {
   margin: 0 10px;
@@ -117,6 +120,10 @@ header h2 {
   max-width: 60%;
   height: auto;
   border-radius: 10px;
+  transition:transform 0.6s ease; 
+}
+.hero .image img:hover {
+  transform: scale(1.1);
 }
 
 .about {
@@ -148,7 +155,7 @@ header h2 {
   display: grid;
   grid-template-columns: repeat(2, minmax(300px, 1fr));
   gap: 20px;
-  padding: 15px;
+  
 }
 
 .project-card {
@@ -160,7 +167,7 @@ header h2 {
   text-align: center;
   height: 350px;
   width: 100%;
-  max-width: 600px;
+  max-width: 500px;
   box-sizing: border-box;
   overflow: hidden;
   background-color: #0fa4af;
@@ -183,7 +190,7 @@ header h2 {
 }
 
 .project-card p {
-  font-size: 13px;
+  font-size: 10px;
   text-align: justify;
   margin-bottom: 15px;
 }
@@ -220,7 +227,8 @@ header h2 {
 }
 
 .contact-button:hover {
-  background-color: #0056b3;
+  color: #0fa4af;
+  background-color: white;
 }
 
 footer {
